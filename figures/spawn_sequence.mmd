@@ -1,0 +1,7 @@
+flowchart LR
+  Inherit[Inherit Genome] --> Mutate[Mutate/Configure Genes]
+  Mutate --> Version[Version + Tag]
+  Version --> QA[QA Checklist + Tests]
+  QA --> Gate{Governance Gate}
+  Gate -->|pass| Deploy[Spawn Agent Instance]
+  Gate -->|fail| Repair[REPAIR → Rollback/Fix]

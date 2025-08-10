@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Sanctioned Action v1",
+  "type": "object",
+  "properties": {
+    "action_id": {
+      "type": "string",
+      "description": "Unique action identifier"
+    },
+    "tool": {
+      "type": "string",
+      "description": "Name of the approved tool"
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "justification": {
+      "type": "string",
+      "description": "Why this action is required"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "telemetry": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "cost_estimate": {
+          "type": "number"
+        },
+        "latency_ms": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "timestamp"
+      ]
+    }
+  },
+  "required": [
+    "action_id",
+    "tool",
+    "parameters",
+    "justification"
+  ],
+  "additionalProperties": false
+}

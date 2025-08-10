@@ -1,0 +1,13 @@
+{
+  "name": "genomic-agent-design",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local tooling to render Mermaid diagrams and validate schemas.",
+  "scripts": {
+    "render:svg": "mkdir -p figures/svg && for f in $(ls figures/*.mmd); do npx -y @mermaid-js/mermaid-cli -i $f -o figures/svg/$(basename ${f%.mmd}).svg; done",
+    "render:png": "mkdir -p figures/png && for f in $(ls figures/*.mmd); do npx -y @mermaid-js/mermaid-cli -i $f -o figures/png/$(basename ${f%.mmd}).png --scale 2; done",
+    "render:all": "npm run render:svg && npm run render:png",
+    "lint:schema": "node -e \"console.log('Use your preferred JSON schema validator');\""
+  },
+  "devDependencies": {}
+}

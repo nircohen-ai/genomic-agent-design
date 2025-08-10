@@ -1,0 +1,7 @@
+flowchart LR
+  Build[Build] --> Test[Test]
+  Test --> Assess[Risk Assessment]
+  Assess --> Gate{Governance Gate}
+  Gate -->|pass| Release[Release]
+  Gate -->|fail| Iterate[Mitigate & Re-test]
+  Gate --> Regs[(EU AI Act, ISO/IEC 42001, NIST AI RMF)]

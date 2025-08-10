@@ -1,0 +1,10 @@
+flowchart TB
+  A1[Agent v1.0] --> A2[Agent v1.1]
+  A2 --> A3[Agent v2.0]
+  A3 --> A4[Agent v2.1]
+  subgraph LINEAGE
+    meta1[Parent ID]
+    meta2[Mutation notes]
+    meta3[PD hash]
+    meta4[Gene versions]
+  end

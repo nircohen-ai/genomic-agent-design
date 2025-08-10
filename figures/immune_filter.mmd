@@ -1,0 +1,7 @@
+flowchart LR
+  U[User Prompt] --> F{{IMMUNE Filter}}
+  F -->|allow| C[Agent Core]
+  F -.->|block: "ignore instructions"| B1([Blocked])
+  F -.->|block: "leak API key"| B2([Blocked])
+  F -.->|block: "tool overreach"| B3([Blocked])
+  C --> T[(Telemetry)]

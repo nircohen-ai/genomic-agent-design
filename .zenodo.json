@@ -1,0 +1,38 @@
+{
+  "title": "Genomic Agent Design \u2014 Companion Repository",
+  "upload_type": "software",
+  "description": "Companion materials for the paper 'Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents'. Includes figures, schemas, AGFF examples, spawn sequence, and red-team prompts.",
+  "creators": [
+    {
+      "name": "Cohen, Nir",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "AI agents",
+    "prompt engineering",
+    "context engineering",
+    "genetic algorithms",
+    "AI safety",
+    "LLM"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "ADD_PAD_URL",
+      "relation": "isPriorVersionOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "ADD_PRIOR_ART_ARCHIVE_URL",
+      "relation": "isPriorVersionOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "ADD_ARXIV_ID",
+      "relation": "isAlternateIdentifier",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Toggle this repository in your Zenodo GitHub settings, then create a GitHub Release to mint the DOI."
+}

@@ -1,0 +1,7 @@
+flowchart TB
+  Role[Role/Instruction Layer] --> Memory[Long/Short-term Memory]
+  Memory --> Retrieval[Retrieval / Knowledge Pack]
+  Retrieval --> Tools[Allowed Tools]
+  Tools --> Schemas[Output Schemas]
+  Schemas --> Guardrails[Guardrails/Filters]
+  Guardrails --> Eval[Evaluation Metrics]
