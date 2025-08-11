@@ -20,3 +20,7 @@ node_modules/
 *.pdf
 *.svg
 *.png
+
+# Allow generated diagram assets
+!figures/**/*.svg
+!figures/**/*.png
