@@ -7,6 +7,6 @@ authors:
     orcid: "https://orcid.org/0009-0005-7179-7496"  # replace with your ORCID
 version: "1.0.0"
 date-released: "2025-08-10"
-doi: "10.5281/zenodo.xxxxxxx"  # replace after Zenodo
+doi: "10.5281/zenodo.16808845"  # replace after Zenodo
 license: "CC-BY-4.0"
 repository-code: "https://github.com/YOUR-USERNAME/genomic-agent-design"
