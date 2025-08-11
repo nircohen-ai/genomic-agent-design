@@ -1,7 +1,7 @@
 # Paper front-matter (paste into your PDF front page)
 
 Title: Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents
-Author: Nir Cohen (ORCID: https://orcid.org/0000-0000-0000-0000)  # replace with your ORCID
+Author: Nir Cohen (ORCID: https://orcid.org/0009-0005-7179-7496)  # replace with your ORCID
 Version: v1.0.0
 Date: 10 Aug 2025
 License: CC BY 4.0
