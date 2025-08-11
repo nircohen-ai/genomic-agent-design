@@ -12,25 +12,48 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # System packages Chromium needs to run headless on ubuntu-latest
+      - name: Install Chromium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 \
+            libxkbcommon0 libxcomposite1 libxrandr2 libxdamage1 libgbm1 \
+            libpango-1.0-0 libpangocairo-1.0-0 libasound2 libgtk-3-0 \
+            fonts-liberation
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install mermaid-cli
-        run: npm i -g @mermaid-js/mermaid-cli
+        run: npm i -g @mermaid-js/mermaid-cli@10
+
+      - name: Write Puppeteer config
+        run: |
+          cat > .puppeteer.json <<'JSON'
+          { "args": ["--no-sandbox", "--disable-setuid-sandbox"] }
+          JSON
+
       - name: Render all .mmd to SVG and PNG
+        shell: bash
         run: |
           mkdir -p figures/svg figures/png
-          for f in $(find figures -name "*.mmd"); do
+          shopt -s nullglob
+          for f in figures/*.mmd; do
             base=$(basename "$f" .mmd)
-            mmdc -i "$f" -o "figures/svg/${base}.svg" --scale 1
-            mmdc -i "$f" -o "figures/png/${base}.png" --scale 2
+            mmdc -i "$f" -o "figures/svg/${base}.svg" --scale 1 --puppeteerConfigFile .puppeteer.json
+            mmdc -i "$f" -o "figures/png/${base}.png" --scale 2 --puppeteerConfigFile .puppeteer.json
           done
+
       - name: Commit rendered diagrams
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add figures/svg/*.svg figures/png/*.png || true
+          git add -A figures/svg figures/png || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
