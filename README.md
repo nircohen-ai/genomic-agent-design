@@ -31,3 +31,19 @@ If you use this work, please cite the Zenodo DOI (preferred) or arXiv ID once av
 
 ## License
 Content is released under **CC BY 4.0**. See `LICENSE`.
+
+## Cite the paper
+Short: Cohen, N. (2025). *Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents.* Zenodo. https://doi.org/10.5281/zenodo.16809166
+
+**BibTeX**
+```bibtex
+@misc{cohen_2025_genomic_agent_design_preprint,
+  author    = {Cohen, Nir},
+  title     = {Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents},
+  year      = {2025},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.16809166},
+  url       = {https://doi.org/10.5281/zenodo.16809166},
+  license   = {CC-BY-4.0}
+}
+```

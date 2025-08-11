@@ -6,5 +6,8 @@
     { "name": "Cohen, Nir", "affiliation": "Independent Researcher", "orcid": "0009-0005-7179-7496" }
   ],
   "license": "cc-by-4.0",
-  "keywords": ["AI agents","prompt engineering","context engineering","genetic algorithms","AI safety","LLM"]
+  "keywords": ["AI agents","prompt engineering","context engineering","genetic algorithms","AI safety","LLM"],
+  "related_identifiers": [
+    { "identifier": "10.5281/zenodo.16809166", "relation": "isSupplementTo", "scheme": "doi" }
+  ]
 }
