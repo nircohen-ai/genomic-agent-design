@@ -1,0 +1,10 @@
+Use of AI-Assisted Tools — Author Statement
+===========================================
+Author: Nir Cohen (ORCID: https://orcid.org/0009-0005-7179-7496)
+Date: 2025-08-15
+
+• Purpose: Large language models were used for language editing, outline refinement, and figure layout guidance.
+• Accountability: All content was reviewed and verified by the author; the author takes full responsibility for the manuscript.
+• Authorship: No AI system is credited with authorship. Final intellectual contribution and decisions are the author's.
+• Data and Code: No proprietary or personal data were provided to AI tools; prompts were scrubbed for sensitive information.
+• Reproducibility: All materials are available at https://doi.org/10.5281/zenodo.16809325 (companion repository) and the OSF project https://doi.org/10.17605/OSF.IO/V68KG.
