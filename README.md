@@ -1,5 +1,5 @@
 # Genomic Agent Design
-[![DOI](https://zenodo.org/badge/1035684364.svg)](https://doi.org/10.5281/zenodo.16809111)
+[![DOI](https://zenodo.org/badge/1035684364.svg)](https://doi.org/10.5281/zenodo.16809325)
 
 Companion materials for the paper:
 
@@ -25,7 +25,7 @@ If you use this work, please cite the Zenodo DOI (preferred) or arXiv ID once av
   author = {Cohen, Nir},
   title = {Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents (Companion Repo)},
   year = {2025},
-  doi = {10.5281/zenodo.16809111}
+  doi = {10.5281/zenodo.16809325}
 }
 ```
 
@@ -47,3 +47,7 @@ Short: Cohen, N. (2025). *Genetic Prompt Engineering + Context Engineering: A ge
   license   = {CC-BY-4.0}
 }
 ```
+
+## Additional records
+- OSF project: https://doi.org/10.17605/OSF.IO/V68KG
+- Also on Academia.edu: https://www.academia.edu/143408836/Genetic_Prompt_Engineering_Context_Engineering_A_genome_style_architecture_for_safe_self_evolving_AI_agents

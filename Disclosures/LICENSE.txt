@@ -1,0 +1,33 @@
+Genomic Agent Design — Licensing Summary
+========================================
+Author: Nir Cohen (ORCID: https://orcid.org/0009-0005-7179-7496)
+Project DOIs: Paper https://doi.org/10.5281/zenodo.16809166 • Repo snapshot https://doi.org/10.5281/zenodo.16809325 • OSF Project https://doi.org/10.17605/OSF.IO/V68KG
+Date: 2025-08-15
+
+SCOPE
+-----
+This project includes: (A) a scholarly manuscript (PDF/DOCX) and figures; and (B) companion code/schemas and machine-readable artifacts.
+
+LICENSES
+--------
+A) Manuscript, figures, and non-code assets: Creative Commons Attribution 4.0 International (CC BY 4.0).
+   • Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+   • Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+   • You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+B) Code and schemas: Apache License, Version 2.0 (ALv2).
+   • License text: https://www.apache.org/licenses/LICENSE-2.0.txt
+   • Applying Apache-2.0 guidance: https://www.apache.org/legal/apply-license.html
+   • SPDX identifier: Apache-2.0
+
+ATTRIBUTION FORMAT (example)
+----------------------------
+Cite the manuscript:
+  Cohen, N. (2025). Genetic Prompt Engineering + Context Engineering: A genome-style architecture for safe, self-evolving AI agents. Zenodo. https://doi.org/10.5281/zenodo.16809166
+
+Reference the repository snapshot (software/materials):
+  Cohen, N. (2025). Genomic Agent Design — Companion Repository (software). Zenodo. https://doi.org/10.5281/zenodo.16809325
+
+DISCLAIMER
+----------
+No warranty is provided. Where third-party materials are included, those items retain their original licenses and attributions.
